@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:orientation="vertical">
+
+    <com.gudnam.bringluck.util.AnimatedExpandableListView
+        android:id="@+id/lv_mypage"
+		android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="9"
+		android:layout_gravity="left"
+		android:dividerHeight="0dp"
+		android:divider="@android:color/transparent" />
+    
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/ad_mypage"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+		android:layout_weight="1"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="ca-app-pub-8412113653981763/7149818335" />
+</LinearLayout>

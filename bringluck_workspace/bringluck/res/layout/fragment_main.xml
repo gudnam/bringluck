@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000000" >
+
+    <RelativeLayout
+        android:id="@+id/cameraPreview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+        <RelativeLayout android:id="@+id/rl_edit_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp">
+            <Spinner android:id="@+id/sp_lotto"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/spinner_img"
+	            android:spinnerMode="dropdown"/>
+            <RelativeLayout android:id="@+id/rl_alarm_check"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_centerVertical="true"
+			    android:layout_alignParentRight="true">
+		        <ImageView android:id="@+id/iv_alarm_receive"
+		            android:layout_width="wrap_content"
+		            android:layout_height="wrap_content"
+		            android:src="@drawable/main_alarm"/>
+			    <ImageView android:id="@+id/iv_check"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"
+			        android:layout_alignRight="@id/iv_alarm_receive"
+			        android:src="@drawable/main_alarmcheck"/>
+			</RelativeLayout>
+	    </RelativeLayout>
+        <RelativeLayout android:id="@+id/ll_num"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_edit_number">
+	        <EditText android:id="@+id/main_01"
+	            style="@style/et_number"
+	            android:background="@drawable/main_01"/>
+	        <EditText android:id="@+id/main_02"
+	            style="@style/et_number"
+	            android:layout_toRightOf="@id/main_01"
+	            android:background="@drawable/main_02"/>
+	        <EditText android:id="@+id/main_03"
+	            style="@style/et_number"
+	            android:layout_toRightOf="@id/main_02"
+	            android:background="@drawable/main_03"/>
+	        <EditText android:id="@+id/main_04"
+	            style="@style/et_number"
+	            android:layout_toRightOf="@id/main_03"
+	            android:background="@drawable/main_04"/>
+	        <EditText android:id="@+id/main_05"
+	            style="@style/et_number"
+	            android:layout_toRightOf="@id/main_04"
+	            android:background="@drawable/main_05"/>
+	        <EditText android:id="@+id/main_06"
+	            style="@style/et_number"
+	            android:layout_toRightOf="@id/main_05"
+	            android:background="@drawable/main_06"
+	            android:imeOptions="actionDone"/>
+
+	        <ImageButton
+	            android:id="@+id/btn_go"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_gravity="right"
+				android:layout_alignParentRight="true"
+	            android:background="@drawable/btn_go_selector" />
+        </RelativeLayout>
+       
+        <LinearLayout android:id="@+id/ll_mypage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:paddingBottom="25dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+	        <ImageButton android:id="@+id/btn_mypage"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:background="@drawable/btn_mypage_selector"/>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

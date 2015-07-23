@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+	android:orientation="vertical">
+
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#A6A6A6"
+    	android:paddingBottom="5dp"/>
+    <RelativeLayout
+        android:id="@+id/rl_win"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+	    android:paddingLeft="40dip"
+	    android:paddingRight="10dip"
+    	android:paddingBottom="10dp" >
+
+        <RelativeLayout
+            android:id="@+id/rl_mypage_top"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/tv_lotto_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:text="655"
+                android:textColor="#FFFFFF"
+                android:textSize="30dip" />
+
+            <RelativeLayout android:id="@+id/rl_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/tv_lotto_age"
+                android:gravity="center_vertical"
+                android:paddingLeft="5dip" 
+                android:layout_marginRight="5dp">
+
+                <TextView
+                    android:id="@+id/tv_winning_year"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11dip" />
+
+                <TextView
+                    android:id="@+id/tv_winning_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/tv_winning_year"
+                    android:textColor="#FFFFFF"
+                    android:textSize="11dip" />
+            </RelativeLayout>
+            <ImageView android:id="@+id/iv_lotto_top_rank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/rl_date"
+                android:layout_centerVertical="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_win_ball"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_mypage_top" >
+
+            <LinearLayout
+                android:id="@+id/ll_win_ball1"
+                style="@style/ll_mypage_win"
+                android:background="@drawable/mypage_white01">
+
+                <ImageView
+                    android:id="@+id/iv_win_ball1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_win_ball2"
+                style="@style/ll_mypage_win"
+                android:layout_toRightOf="@id/ll_win_ball1"
+                android:background="@drawable/mypage_white02">
+
+                <ImageView
+                    android:id="@+id/iv_win_ball2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_win_ball3"
+                style="@style/ll_mypage_win"
+                android:layout_toRightOf="@id/ll_win_ball2"
+                android:background="@drawable/mypage_white03">
+
+                <ImageView
+                    android:id="@+id/iv_win_ball3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_win_ball4"
+                style="@style/ll_mypage_win"
+                android:layout_toRightOf="@id/ll_win_ball3"
+                android:background="@drawable/mypage_white04">
+
+                <ImageView
+                    android:id="@+id/iv_win_ball4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_win_ball5"
+                style="@style/ll_mypage_win"
+                android:layout_toRightOf="@id/ll_win_ball4"
+                android:background="@drawable/mypage_white05">
+
+                <ImageView
+                    android:id="@+id/iv_win_ball5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_win_ball6"
+                style="@style/ll_mypage_win"
+                android:layout_toRightOf="@id/ll_win_ball5"
+                android:background="@drawable/mypage_white06">
+
+                <ImageView
+                    android:id="@+id/iv_win_ball6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_win_ball7"
+                style="@style/ll_mypage_win"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="0dp"
+                android:layout_toRightOf="@id/ll_win_ball6"
+                android:background="@drawable/mypage_white07" >
+
+                <ImageView
+                    android:id="@+id/iv_win_ball7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

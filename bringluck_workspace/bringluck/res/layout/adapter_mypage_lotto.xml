@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingLeft="15dip"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp">
+    
+    <RelativeLayout android:id="@+id/rl_lotto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+	    
+        <ImageView android:id="@+id/iv_lotto_rank"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="5dp"/>
+	    
+	    <RelativeLayout android:id="@+id/rl_win_ball"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true">
+            
+	        <LinearLayout
+                android:id="@+id/ll_lotto_ball1"
+				style="@style/ll_mypage_lotto"
+                android:background="@drawable/mypage_1g" >
+                <ImageView
+                    android:id="@+id/iv_lotto_ball1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/ll_lotto_ball2"
+				style="@style/ll_mypage_lotto"
+		        android:layout_toRightOf="@id/ll_lotto_ball1" 
+                android:background="@drawable/mypage_2g">
+                <ImageView
+                    android:id="@+id/iv_lotto_ball2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>	  
+            <LinearLayout
+                android:id="@+id/ll_lotto_ball3"
+				style="@style/ll_mypage_lotto"
+		        android:layout_toRightOf="@id/ll_lotto_ball2" 
+                android:background="@drawable/mypage_3g" >  
+			    <ImageView
+			        android:id="@+id/iv_lotto_ball3"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" />		
+            </LinearLayout>	      
+            <LinearLayout
+                android:id="@+id/ll_lotto_ball4"
+				style="@style/ll_mypage_lotto"
+		        android:layout_toRightOf="@id/ll_lotto_ball3" 
+                android:background="@drawable/mypage_4g" >  
+			    <ImageView
+			        android:id="@+id/iv_lotto_ball4"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"/>	
+            </LinearLayout>	     
+            <LinearLayout
+                android:id="@+id/ll_lotto_ball5"
+				style="@style/ll_mypage_lotto"
+		        android:layout_toRightOf="@id/ll_lotto_ball4" 
+                android:background="@drawable/mypage_5g">   	    
+			    <ImageView
+			        android:id="@+id/iv_lotto_ball5"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content" />	
+            </LinearLayout>	     	   
+            <LinearLayout
+                android:id="@+id/ll_lotto_ball6"
+				style="@style/ll_mypage_lotto"
+		        android:layout_toRightOf="@id/ll_lotto_ball5" 
+                android:background="@drawable/mypage_6g" >   	     
+			    <ImageView
+			        android:id="@+id/iv_lotto_ball6"
+			        android:layout_width="wrap_content"
+			        android:layout_height="wrap_content"/>		   
+            </LinearLayout>	     	    
+	    </RelativeLayout>
+	</RelativeLayout>
+
+</LinearLayout>

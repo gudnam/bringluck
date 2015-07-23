@@ -1,0 +1,43 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical" 
+	    android:background="#000000">
+	    <RelativeLayout
+		    android:id="@+id/ll_fragment"
+		    android:layout_width="match_parent"
+		    android:layout_height="0dip"
+		    android:orientation="vertical"
+		    android:layout_weight="5">
+	        <fragment android:name="com.trhura.android.zbar.scanner.ZBarFragment"
+                  android:id="@+id/scan_fragment"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent" />
+	        <com.gudnam.bringluck.qrcode.activity.OverlayRectangleView
+	                android:id="@+id/overlay_rectangle"
+	                android:layout_width="fill_parent"
+	                android:layout_height="fill_parent" android:layout_alignTop="@+id/scan_fragment"
+	                android:layout_alignBottom="@+id/scan_fragment" android:layout_alignLeft="@+id/scan_fragment"
+                	android:layout_alignRight="@+id/scan_fragment"/>
+	    </RelativeLayout>
+	    <com.google.android.gms.ads.AdView
+	        xmlns:ads="http://schemas.android.com/apk/res-auto"
+	        android:id="@+id/ad_qrcode"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:layout_weight="1"
+	        ads:adSize="SMART_BANNER"
+	        ads:adUnitId="ca-app-pub-8412113653981763/5673085136" />
+	    <LinearLayout
+	        android:id="@+id/ll_main"
+	        android:layout_width="match_parent"
+	        android:layout_height="0dip"
+	        android:orientation="vertical"
+	        android:layout_weight="4"/>
+	</LinearLayout>
+</RelativeLayout>
